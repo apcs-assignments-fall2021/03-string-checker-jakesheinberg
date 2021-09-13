@@ -3,7 +3,7 @@ import java.util.Scanner;
 public class MyMain {
     
     // Counts the number of 'a', 'b', and 'c' chars in str
-    public static String countABC(String str) {
+    public static int countABC(String str) {
 
         int strlen = str.length();
         int a = 0;
@@ -26,7 +26,8 @@ public class MyMain {
             }
         }
         String statement = ("It had " + a + "a's, " + b + " b's, and " + c + " c's");
-        return statement;
+//        return statement;
+        return a + b + c;
     }
 
     // Checks to see whether or not str contains 'The' or 'the'
@@ -45,9 +46,10 @@ public class MyMain {
 
         int lenstr = str.length();
         int halfLen= lenstr/2;
-        for (int p=0,p<halfLen, ++)
-        char a = str.charAt(x);
-        char b = str.charAt(lenstr-1);
+        for (int p=0; p<halfLen; p++){
+            char a = str.charAt(p);
+            char b = str.charAt(lenstr - 1);
+        }
         return false;
     }
     
@@ -55,7 +57,7 @@ public class MyMain {
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
 
-        String y = countABC("jake");
-        System.out.println(y);
+//        String y = countABC("jake");
+//        System.out.println(y);
     }
 }
