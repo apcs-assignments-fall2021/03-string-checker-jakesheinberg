@@ -3,7 +3,7 @@ import java.util.Scanner;
 public class MyMain {
     
     // Counts the number of 'a', 'b', and 'c' chars in str
-    public static String countABC(String str) {
+    public static int countABC(String str) {
 
         int strlen = str.length();
         int a = 0;
@@ -26,7 +26,7 @@ public class MyMain {
             }
         }
         String statement = ("It had " + a + "a's, " + b + " b's, and " + c + " c's");
-        return statement;
+        return a + b + c;
     }
 
     // Checks to see whether or not str contains 'The' or 'the'
@@ -60,7 +60,7 @@ public class MyMain {
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
 
-        boolean y = isPalindrome("abba");
+        boolean y = isPalindrome("racecar");
         System.out.println(y);
     }
 }
