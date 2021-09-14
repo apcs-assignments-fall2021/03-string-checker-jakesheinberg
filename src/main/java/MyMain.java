@@ -42,19 +42,13 @@ public class MyMain {
 
     // Checks whether str is a palindrome or not
     public static boolean isPalindrome(String str) {
-        String y = "";
-        int lenstr = str.length();
-        for(int k =lenstr-1; k>=0; k--) {
-            String y = y + str.charAt((k));
-        if(str.equals(y))
-            {
-                System.out.println("The string is palindrome.");
-            }
-            else
-            {
-                System. out.println("The string is not a palindrome.");
-        }
 
+        int lenstr = str.length();
+        int halfLen= lenstr/2;
+        for (int p=0,p<halfLen, ++)
+        char a = str.charAt(x);
+        char b = str.charAt(lenstr-1);
+        return false;
     }
     
     
