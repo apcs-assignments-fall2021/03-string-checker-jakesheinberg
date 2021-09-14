@@ -42,20 +42,25 @@ public class MyMain {
 
     // Checks whether str is a palindrome or not
     public static boolean isPalindrome(String str) {
-
-        int lenstr = str.length();
-        int halfLen= lenstr/2;
-        for (int p=0,p<halfLen, ++)
-        char a = str.charAt(x);
-        char b = str.charAt(lenstr-1);
-        return false;
+        String palin= "";
+        int x =0;
+        int lenstr = str.length()-1;
+        for (int p=lenstr; p>=0; p--) {
+            char a = str.charAt(p);
+            palin = palin+a;
+        }
+        if(palin.equals(str)){
+            return true;
+        }else {
+            return false;
+        }
     }
     
     
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
 
-        String y = countABC("jake");
+        boolean y = isPalindrome("abba");
         System.out.println(y);
     }
 }
